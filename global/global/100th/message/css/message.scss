@@ -1,0 +1,66 @@
+@import "../../common/css/mixin";
+
+.message-page__content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media #{$info-phone} {
+    padding-top: 35px;
+    padding-bottom: 68px;
+  }
+  .message__col--l {
+    width: 44.8%;
+    float: left;
+    @media #{$info-phone} {
+      width: 34%;
+      margin-right: 18px;
+    }
+  }
+
+  .message__col--r {
+    float: left;
+    width: 55.2%;
+    margin-top: 7px;
+    @media #{$info-phone} {
+      float: none;
+      width: auto;
+      margin-top: -4px;
+    }
+    p {
+      margin-bottom: 12px;
+      @media #{$info-phone} {
+        line-height: 23px;
+        margin-bottom: 0;
+      }
+      &.img-sign {
+        text-align: right;
+        margin-top: 25px;
+        img {
+          width: 150px;
+        }
+        @media #{$info-phone} {
+          margin-top: 37px;
+        }
+      }
+    }
+  }
+}
+
+#footerBOX.absolute-ac {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  @media #{$info-tablet} {
+    width: 980px;
+  }
+}
+
+.page-body.absolute-ac {
+  position: absolute;
+  top: 74px;
+  bottom: 53px;
+  right: 0;
+  left: 0;
+  @media #{$info-tablet} {
+    width: 980px;
+  }
+}

@@ -1,0 +1,136 @@
+.child-page__content.movie-page {
+  padding-top: 57px;
+  padding-bottom: 45px; }
+  @media only screen and (max-width: 767px) {
+    .child-page__content.movie-page {
+      padding-top: 31px;
+      padding-bottom: 26px; } }
+
+.child-page__block {
+  margin-bottom: 74px; }
+  @media only screen and (max-width: 767px) {
+    .child-page__block {
+      margin-bottom: 40px; } }
+  .child-page__block .child-page__block__title.add-line-height {
+    line-height: 1.6; }
+
+.video-page__row {
+  margin-bottom: 38px; }
+  @media only screen and (max-width: 767px) {
+    .video-page__row {
+      margin-bottom: 20px; } }
+  .video-page__row .video-page__col {
+    width: 50%;
+    float: left; }
+    .video-page__row .video-page__col .vjs-big-play-button {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 2px solid #fff;
+      color: #c51927;
+      top: 70px;
+      left: 150px; }
+      .video-page__row .video-page__col .vjs-big-play-button:before {
+        line-height: 58px;
+        text-shadow: none; }
+        @media only screen and (max-width: 767px) {
+          .video-page__row .video-page__col .vjs-big-play-button:before {
+            line-height: 31px; } }
+      @media only screen and (max-width: 767px) {
+        .video-page__row .video-page__col .vjs-big-play-button {
+          width: 35px;
+          height: 35px;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          font-size: 20px; } }
+    .video-page__row .video-page__col .vjs-default-skin:hover .vjs-big-play-button, .video-page__row .video-page__col .vjs-default-skin .vjs-big-play-button:focus {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 2px solid #fff;
+      color: #c51927;
+      top: 70px;
+      left: 150px; }
+      .video-page__row .video-page__col .vjs-default-skin:hover .vjs-big-play-button:before, .video-page__row .video-page__col .vjs-default-skin .vjs-big-play-button:focus:before {
+        line-height: 58px;
+        text-shadow: none; }
+    .video-page__row .video-page__col p {
+      text-align: center; }
+      @media only screen and (max-width: 767px) {
+        .video-page__row .video-page__col p {
+          text-align: left;
+          font-size: 13px;
+          line-height: 19px;
+          margin: 0 -4px; } }
+    .video-page__row .video-page__col .video-block {
+      margin-bottom: 15px;
+      height: 200px;
+      background-color: #c0c0c0;
+      line-height: 200px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-family: "CenturyGothic-Bold"; }
+      @media only screen and (max-width: 767px) {
+        .video-page__row .video-page__col .video-block {
+          margin-bottom: 11px;
+          height: 90px;
+          line-height: 90px;
+          font-size: 12px; } }
+      @media only screen and (max-width: 767px) {
+        .video-page__row .video-page__col .video-block .video-js {
+          height: 90px !important; } }
+  .video-page__row .video-page__col-l {
+    padding-right: 20px; }
+    @media only screen and (max-width: 767px) {
+      .video-page__row .video-page__col-l {
+        padding-right: 12px; } }
+  .video-page__row .video-page__col-r {
+    padding-left: 20px; }
+    @media only screen and (max-width: 767px) {
+      .video-page__row .video-page__col-r {
+        padding-left: 12px; } }
+
+.child-page__menu {
+  margin-bottom: 45px;
+  font-family: "CenturyGothic"; }
+  @media only screen and (max-width: 767px) {
+    .child-page__menu {
+      margin-bottom: 33px; } }
+  .child-page__menu .menu-item {
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    color: #000;
+    border: 1px solid #333333;
+    height: 54px;
+    width: 31.533%;
+    float: left;
+    margin-right: 2.7%;
+    display: table;
+    line-height: 1.6; }
+    .child-page__menu .menu-item:focus {
+      text-decoration: none; }
+    @media only screen and (max-width: 767px) {
+      .child-page__menu .menu-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 11px; } }
+    .child-page__menu .menu-item.no-margin {
+      margin-right: 0; }
+    .child-page__menu .menu-item span {
+      display: table-cell;
+      vertical-align: middle; }
+    .child-page__menu .menu-item img {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      -webkit-transform: translateY(-50%);
+      -khtml-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+/*# sourceMappingURL=movie.css.map */

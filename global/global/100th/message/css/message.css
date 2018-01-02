@@ -1,0 +1,57 @@
+.message-page__content {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .message-page__content {
+      padding-top: 35px;
+      padding-bottom: 68px; } }
+  .message-page__content .message__col--l {
+    width: 44.8%;
+    float: left; }
+    @media only screen and (max-width: 767px) {
+      .message-page__content .message__col--l {
+        width: 34%;
+        margin-right: 18px; } }
+  .message-page__content .message__col--r {
+    float: left;
+    width: 55.2%;
+    margin-top: 7px; }
+    @media only screen and (max-width: 767px) {
+      .message-page__content .message__col--r {
+        float: none;
+        width: auto;
+        margin-top: -4px; } }
+    .message-page__content .message__col--r p {
+      margin-bottom: 12px; }
+      @media only screen and (max-width: 767px) {
+        .message-page__content .message__col--r p {
+          line-height: 23px;
+          margin-bottom: 0; } }
+      .message-page__content .message__col--r p.img-sign {
+        text-align: right;
+        margin-top: 25px; }
+        .message-page__content .message__col--r p.img-sign img {
+          width: 150px; }
+        @media only screen and (max-width: 767px) {
+          .message-page__content .message__col--r p.img-sign {
+            margin-top: 37px; } }
+
+#footerBOX.absolute-ac {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  @media only screen and (max-width: 800px) {
+    #footerBOX.absolute-ac {
+      width: 980px; } }
+
+.page-body.absolute-ac {
+  position: absolute;
+  top: 74px;
+  bottom: 53px;
+  right: 0;
+  left: 0; }
+  @media only screen and (max-width: 800px) {
+    .page-body.absolute-ac {
+      width: 980px; } }
+
+/*# sourceMappingURL=message.css.map */

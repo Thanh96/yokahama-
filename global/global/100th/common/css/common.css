@@ -1,0 +1,700 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: url("../font/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../font/CenturyGothic-Bold.woff") format("woff"), url("../font/CenturyGothic-Bold.ttf") format("truetype"), url("../font/CenturyGothic-Bold.svg#CenturyGothic-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../font/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../font/CenturyGothic.woff") format("woff"), url("../font/CenturyGothic.ttf") format("truetype"), url("../font/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4, h5, p {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.top-wrap {
+  width: 1200px;
+  margin: auto; }
+  @media only screen and (max-width: 1160px) {
+    .top-wrap {
+      width: 100%; } }
+  .top-wrap img {
+    width: 100%; }
+
+body {
+  font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-size: 14px; }
+
+.page-body {
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .page-body {
+      margin-top: 55px; } }
+
+.page-body__content {
+  position: relative;
+  z-index: 2; }
+  @media only screen and (max-width: 767px) {
+    .page-body__content {
+      padding: 0 10px;
+      overflow-y: inherit; } }
+  @media only screen and (max-width: 1160px) {
+    .page-body__content {
+      overflow-y: scroll; } }
+  @media only screen and (max-width: 800px) {
+    .page-body__content {
+      overflow-y: scroll; } }
+  @media only screen and (max-width: 767px) {
+    .page-body__content.child-page {
+      padding: 0; } }
+
+.line-grid {
+  background: url("../img/100th_grid.png") top right repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media only screen and (max-width: 767px) {
+    .line-grid {
+      background-image: url("../img/100th_grid-sp.png"); } }
+  .line-grid.fixed {
+    position: fixed; }
+  .line-grid.child-page {
+    margin-right: 0;
+    background: url("../img/100th_grid-child.png") top right repeat; }
+    @media only screen and (max-width: 767px) {
+      .line-grid.child-page {
+        background: url("../img/100th_grid-child-sp.png") top right repeat; } }
+
+@media only screen and (max-width: 1160px) {
+  #page {
+    min-width: 980px; } }
+@media only screen and (max-width: 800px) {
+  #page {
+    width: 980px;
+    min-width: inherit; } }
+@media only screen and (max-width: 767px) {
+  #page {
+    width: auto; } }
+
+#header {
+  background: url("../img/100th_header_bg.png") #000 center top no-repeat;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Pゴシック", sans-serif;
+  padding-bottom: 14px;
+  position: relative;
+  z-index: 9; }
+  #header a {
+    color: #fff;
+    text-decoration: none; }
+    #header a img {
+      max-width: inherit; }
+  #header #headerIn {
+    width: 980px;
+    margin: 0 auto;
+    position: relative; }
+    @media only screen and (max-width: 767px) {
+      #header #headerIn {
+        width: 100%; } }
+    #header #headerIn h1 {
+      width: 236px;
+      padding: 5px 0 0 20px;
+      float: left; }
+      @media only screen and (max-width: 767px) {
+        #header #headerIn h1 {
+          height: 20px;
+          margin: 4px 0 0 10px;
+          width: 163px;
+          padding: 0; } }
+      #header #headerIn h1 img {
+        width: 100%; }
+    #header #headerIn #headerR {
+      float: right; }
+      @media only screen and (max-width: 767px) {
+        #header #headerIn #headerR {
+          display: none; } }
+      #header #headerIn #headerR #h_menu li {
+        background: url("../img/100th_h_arrow.gif") left center no-repeat;
+        float: left;
+        font-size: 10px;
+        line-height: 1.2em;
+        margin-left: 35px;
+        margin-top: 6px;
+        padding-left: 10px;
+        vertical-align: middle; }
+      #header #headerIn #headerR #headerSearch {
+        margin-top: 10px;
+        float: right; }
+        #header #headerIn #headerR #headerSearch input {
+          float: left; }
+          #header #headerIn #headerR #headerSearch input[type=text] {
+            width: 203px;
+            padding: 1px 4px;
+            background: #808080;
+            border-radius: 3px;
+            box-shadow: 1px 1px 3px #646363 inset;
+            border: none;
+            color: #fff;
+            margin-right: 5px;
+            cursor: default;
+            float: left; }
+        #header #headerIn #headerR #headerSearch #searchIcon {
+          border: 0;
+          width: 19px;
+          height: 20px;
+          background: url("../img/100th_search_icon.png") no-repeat;
+          cursor: hand; }
+    #header #headerIn #gNavi_sp {
+      background: url("../img/100th_sp_menu_btn.gif") left top no-repeat;
+      background-size: 35px 60px;
+      cursor: pointer;
+      height: 29px;
+      position: absolute;
+      right: 10px;
+      text-indent: -9999px;
+      top: 12px;
+      width: 35px;
+      display: none; }
+      @media only screen and (max-width: 767px) {
+        #header #headerIn #gNavi_sp {
+          display: block; } }
+      #header #headerIn #gNavi_sp.open {
+        background-position: left bottom; }
+  @media only screen and (max-width: 767px) {
+    #header {
+      background: #000;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      height: 55px;
+      border-bottom: 2px solid #df0615; } }
+
+#footerBOX {
+  background: #000;
+  padding-bottom: 3px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Pゴシック", sans-serif;
+  border-top: 6px solid #000;
+  position: relative;
+  z-index: 3; }
+  @media only screen and (max-width: 767px) {
+    #footerBOX {
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      padding: 15px 10px 24px 10px;
+      background: #fff; } }
+  #footerBOX.homepage-footer {
+    border-top: none; }
+  #footerBOX #footer_in {
+    width: 980px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 767px) {
+      #footerBOX #footer_in {
+        width: 100%; } }
+  #footerBOX .logo {
+    float: left;
+    line-height: 1em;
+    margin: 16px 20px 0 0; }
+    @media only screen and (max-width: 767px) {
+      #footerBOX .logo {
+        margin: 0 0 16px 0;
+        width: 77%; } }
+  #footerBOX ul {
+    float: left;
+    margin-top: 17px; }
+    @media only screen and (max-width: 767px) {
+      #footerBOX ul {
+        margin-bottom: 7px;
+        margin-top: 0; } }
+    #footerBOX ul li {
+      background: url("../img/100th_h_arrow.gif") left center no-repeat;
+      float: left;
+      font-size: 10px;
+      margin-right: 10px;
+      padding-left: 10px;
+      line-height: 1.7em; }
+      @media only screen and (max-width: 767px) {
+        #footerBOX ul li {
+          float: left;
+          line-height: 1.2em;
+          margin-right: 14px;
+          width: auto;
+          background: transparent;
+          padding-left: 0; } }
+      #footerBOX ul li a {
+        color: #fff;
+        text-decoration: none; }
+        @media only screen and (max-width: 767px) {
+          #footerBOX ul li a {
+            background: url("../img/100th_f_arrow.gif") left center no-repeat;
+            color: #666;
+            display: inline-block;
+            float: left;
+            line-height: 1.3em;
+            padding-left: 10px;
+            font-size: 12px; } }
+  #footerBOX #copy {
+    float: right;
+    font-size: 9px;
+    margin: 20px 0 0;
+    color: #fff; }
+    @media only screen and (max-width: 767px) {
+      #footerBOX #copy {
+        color: #666;
+        float: right;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 2px;
+        text-align: left;
+        width: 100%; } }
+
+.page-body__content__sidebar {
+  position: absolute;
+  right: 0;
+  width: 240px;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  background: url("../img/100th_grid-child.png") #f9f9f9; }
+  @media only screen and (max-width: 767px) {
+    .page-body__content__sidebar {
+      display: none;
+      position: fixed;
+      top: 47px;
+      z-index: 99;
+      overflow: scroll;
+      bottom: 0;
+      width: 100%;
+      font-size: 15px;
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff; } }
+  .page-body__content__sidebar.fixed {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2; }
+  .page-body__content__sidebar.page-body__content__sidebar--home {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99; }
+    .page-body__content__sidebar.page-body__content__sidebar--home a {
+      color: #000; }
+  .page-body__content__sidebar .sidebar__block {
+    height: 225px; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__block {
+        border-bottom: 1px solid #666666;
+        height: 238px; } }
+  @media only screen and (max-width: 767px) {
+    .page-body__content__sidebar .sidebar__nav {
+      height: 375px;
+      padding-top: 44px; } }
+  .page-body__content__sidebar .sidebar__nav ul {
+    padding-top: 19px;
+    padding-left: 30px; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__nav ul {
+        padding: 0; } }
+    .page-body__content__sidebar .sidebar__nav ul li {
+      position: relative;
+      display: table;
+      padding-right: 3px;
+      padding-bottom: 1px;
+      margin-bottom: 16px; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__nav ul li {
+          border-bottom: none;
+          width: auto;
+          display: block;
+          text-align: center;
+          margin-bottom: 38px; } }
+      .page-body__content__sidebar .sidebar__nav ul li .line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 6px;
+        height: 1px;
+        background-color: #c51927;
+        display: block;
+        -webkit-transition: 0.5s;
+        -khtml-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__nav ul li .line {
+            display: none; } }
+      .page-body__content__sidebar .sidebar__nav ul li a {
+        -webkit-transition: 0.3s;
+        -khtml-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        color: #000; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__nav ul li a {
+            position: relative;
+            width: auto;
+            padding-bottom: 4px;
+            color: #fff; }
+            .page-body__content__sidebar .sidebar__nav ul li a:before {
+              content: "";
+              position: absolute;
+              width: 9px;
+              height: 1px;
+              bottom: 0;
+              background-color: #c51927;
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+              -khtml-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+      .page-body__content__sidebar .sidebar__nav ul li.active, .page-body__content__sidebar .sidebar__nav ul li:hover {
+        width: auto;
+        display: table;
+        font-weight: bold; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__nav ul li.active, .page-body__content__sidebar .sidebar__nav ul li:hover {
+            display: block;
+            font-weight: normal; } }
+      .page-body__content__sidebar .sidebar__nav ul li.active .line, .page-body__content__sidebar .sidebar__nav ul li:hover .line {
+        width: 100%; }
+      .page-body__content__sidebar .sidebar__nav ul li.active a, .page-body__content__sidebar .sidebar__nav ul li:hover a {
+        width: auto; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__nav ul li.active a, .page-body__content__sidebar .sidebar__nav ul li:hover a {
+            position: relative; } }
+  .page-body__content__sidebar .sidebar__nav.sidebar__nav--homepage a {
+    color: #fff; }
+  .page-body__content__sidebar .sidebar__block__title {
+    font-family: "CenturyGothic-Bold";
+    text-align: center;
+    padding-top: 24px; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__block__title {
+        padding-top: 17px; } }
+  .page-body__content__sidebar .sidebar__video {
+    padding: 0 30px;
+    margin-top: 15px; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__video {
+        padding: 0 65px;
+        margin-top: 19px; } }
+    .page-body__content__sidebar .sidebar__video .slick-arrow {
+      display: inline-block;
+      position: absolute;
+      top: 37px;
+      background: transparent;
+      border: none; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__video .slick-arrow {
+          top: 40%;
+          -webkit-transform: translateY(-50%);
+          -khtml-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+      .page-body__content__sidebar .sidebar__video .slick-arrow img {
+        width: 6px; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__video .slick-arrow img {
+            width: auto; } }
+      .page-body__content__sidebar .sidebar__video .slick-arrow.slick-prev {
+        left: 8px; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__video .slick-arrow.slick-prev {
+            left: 26px; } }
+      .page-body__content__sidebar .sidebar__video .slick-arrow.slick-next {
+        right: 8px; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__video .slick-arrow.slick-next {
+            right: 26px; } }
+      .page-body__content__sidebar .sidebar__video .slick-arrow:focus {
+        outline: none; }
+    .page-body__content__sidebar .sidebar__video .slick-list {
+      border: 2px solid #fff; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__video .slick-list {
+          border: 2px solid #939393; } }
+    .page-body__content__sidebar .sidebar__video .vjs-big-play-button {
+      left: 74px;
+      top: 33px;
+      width: 33px;
+      height: 33px;
+      border: 2px solid #fff;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #c51927;
+      font-size: 7px; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__video .vjs-big-play-button {
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          -khtml-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -o-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          width: 52px;
+          height: 52px;
+          border: 1px solid #fff;
+          font-size: 25px; } }
+      .page-body__content__sidebar .sidebar__video .vjs-big-play-button:before {
+        text-shadow: none;
+        line-height: 33px;
+        left: 2px; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__video .vjs-big-play-button:before {
+            line-height: 52px; } }
+    .page-body__content__sidebar .sidebar__video .vjs-fullscreen-control {
+      position: absolute;
+      right: 0; }
+    .page-body__content__sidebar .sidebar__video .vjs-volume-control {
+      margin-right: 40px; }
+    .page-body__content__sidebar .sidebar__video .slick-dots {
+      color: transparent;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 0; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__video .slick-dots {
+          margin-top: 11px; } }
+      .page-body__content__sidebar .sidebar__video .slick-dots li {
+        display: inline-block;
+        height: 2px; }
+        @media only screen and (max-width: 767px) {
+          .page-body__content__sidebar .sidebar__video .slick-dots li {
+            height: 3px; } }
+        .page-body__content__sidebar .sidebar__video .slick-dots li.slick-active button {
+          background: #c51927; }
+        .page-body__content__sidebar .sidebar__video .slick-dots li button {
+          margin: 0 2px;
+          width: 14px;
+          height: 2px;
+          padding: 0;
+          border: none;
+          background: #666666; }
+          @media only screen and (max-width: 767px) {
+            .page-body__content__sidebar .sidebar__video .slick-dots li button {
+              width: 23px;
+              height: 3px; } }
+          .page-body__content__sidebar .sidebar__video .slick-dots li button:focus {
+            outline: none; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__video .video-js {
+        height: 140px !important; } }
+  .page-body__content__sidebar .sidebar__news {
+    padding: 0 30px; }
+    @media only screen and (max-width: 767px) {
+      .page-body__content__sidebar .sidebar__news {
+        height: 233px;
+        font-size: 16px; } }
+    .page-body__content__sidebar .sidebar__news .sidebar__block__title {
+      margin-bottom: -4px; }
+    .page-body__content__sidebar .sidebar__news .sidebar__news__block {
+      padding: 15px 0;
+      border-bottom: 1px solid #cccccc; }
+      @media only screen and (max-width: 767px) {
+        .page-body__content__sidebar .sidebar__news .sidebar__news__block {
+          padding-top: 20px;
+          padding-bottom: 8px; } }
+      .page-body__content__sidebar .sidebar__news .sidebar__news__block .sidebar__news__block__day {
+        color: #999999;
+        margin-bottom: 1px; }
+
+.custom-btn {
+  position: relative;
+  width: 240px;
+  height: 60px;
+  display: inline-block;
+  margin: auto;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  line-height: 60px;
+  font-size: 16px;
+  font-family: "CenturyGothic-Bold";
+  color: #fff;
+  overflow: hidden;
+  transition: ease .3s; }
+  @media only screen and (max-width: 767px) {
+    .custom-btn {
+      width: 210px;
+      font-size: 15px;
+      height: 50px;
+      line-height: 50px; } }
+  .custom-btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8); }
+  .custom-btn:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background: #666666;
+    left: -5%;
+    top: -100%;
+    -webkit-transform: rotate(-30deg);
+    -khtml-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    z-index: 1;
+    transition: ease .5s; }
+  .custom-btn:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background: #666666;
+    left: -13%;
+    top: -100%;
+    -webkit-transform: rotate(-30deg);
+    -khtml-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    z-index: 1;
+    transition: ease .5s; }
+  .custom-btn span {
+    position: relative;
+    z-index: 2; }
+  .custom-btn img {
+    margin-left: 10px;
+    margin-top: -3px; }
+  .custom-btn:hover:before {
+    left: 123%; }
+  .custom-btn:hover:after {
+    left: 110%; }
+
+.child-page {
+  margin-right: 240px; }
+  @media only screen and (max-width: 767px) {
+    .child-page {
+      margin-right: 0; } }
+  .child-page .child-page__banner {
+    background-size: cover;
+    background-position: left center;
+    height: 226px;
+    position: relative; }
+    @media only screen and (max-width: 767px) {
+      .child-page .child-page__banner {
+        height: 252px; } }
+    .child-page .child-page__banner.movie-page {
+      background-image: url("../img/100th_movie-banner.jpg"); }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner.movie-page {
+          background-image: url("../img/100th_movie-banner-sp.jpg"); } }
+    .child-page .child-page__banner.message-page {
+      background: url("../img/100th_message-banner.jpg") right center no-repeat;
+      background-size: cover; }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner.message-page {
+          background-image: url("../img/100th_message-banner-sp.jpg"); } }
+    .child-page .child-page__banner.philosophy-page {
+      background-image: url("../img/100th_philosophy-banner.jpg"); }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner.philosophy-page {
+          background-image: url("../img/100th_philosophy-banner-sp.jpg"); } }
+    .child-page .child-page__banner.history-page {
+      background-image: url("../img/100th_history-banner.jpg"); }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner.history-page {
+          background-image: url("../img/100th_history-banner-sp.jpg"); } }
+    .child-page .child-page__banner .child-page__title {
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background-color: #000;
+      padding-left: 61px;
+      padding-right: 40px;
+      height: 90px;
+      z-index: 2; }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner .child-page__title {
+          top: 13px;
+          padding-left: 20px;
+          height: 61px;
+          padding-right: 25px; } }
+      .child-page .child-page__banner .child-page__title h1 {
+        margin-top: 25px;
+        margin-bottom: 6px; }
+        @media only screen and (max-width: 767px) {
+          .child-page .child-page__banner .child-page__title h1 {
+            margin-top: 10px;
+            margin-bottom: 0; }
+            .child-page .child-page__banner .child-page__title h1 img {
+              height: 25px; } }
+      .child-page .child-page__banner .child-page__title p {
+        font-size: 16px;
+        color: #707070;
+        font-family: "Georgia, serif"; }
+        @media only screen and (max-width: 767px) {
+          .child-page .child-page__banner .child-page__title p {
+            font-size: 11px; } }
+    .child-page .child-page__banner .line-grid {
+      background: url("../img/100th_grid-banner.png") top right repeat; }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__banner .line-grid {
+          background: url("../img/100th_grid-child-sp.png") top right repeat; } }
+  .child-page .child-page__content {
+    width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; }
+    @media only screen and (max-width: 1160px) {
+      .child-page .child-page__content {
+        width: 100%;
+        padding: 0 20px; } }
+    @media only screen and (max-width: 800px) {
+      .child-page .child-page__content {
+        width: 100%;
+        padding: 0 20px; } }
+    @media only screen and (max-width: 767px) {
+      .child-page .child-page__content {
+        padding: 0 15px; } }
+    .child-page .child-page__content .child-page__block__title {
+      font-size: 24px;
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 767px) {
+        .child-page .child-page__content .child-page__block__title {
+          font-size: 20px;
+          margin-bottom: 13px; } }
+      .child-page .child-page__content .child-page__block__title.century-font {
+        font-family: "CenturyGothic"; }
+      .child-page .child-page__content .child-page__block__title .line {
+        width: 20px;
+        height: 1px;
+        background-color: #666666;
+        display: block;
+        margin-top: 15px; }
+        @media only screen and (max-width: 767px) {
+          .child-page .child-page__content .child-page__block__title .line {
+            margin-top: 10px;
+            width: 10px; } }
+
+.video-block iframe {
+  border: none; }
+
+/*# sourceMappingURL=common.css.map */
+
+/*# sourceMappingURL=common.css.map */
